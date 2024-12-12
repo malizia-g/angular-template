@@ -1,0 +1,20 @@
+{
+    "name": "Angular Template",
+    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:18",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "angular.ng-template",
+                "dbaeumer.vscode-eslint"
+            ]
+        }
+    },
+    "postCreateCommand": "npm install -g @angular/cli",
+    "portsAttributes": {
+        "4200": {
+            "label": "Angular Dev Server",
+            "onAutoForward": "notify"
+        }
+    },
+    "forwardPorts": [4200]
+}
