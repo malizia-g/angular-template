@@ -9,7 +9,7 @@
             ]
         }
     },
-    "postCreateCommand": "npm install -g @angular/cli",
+    "postCreateCommand": "apt-get update && apt-get install mariadb-server -y && service mariadb start && npm install -g @angular/cli",
     "portsAttributes": {
         "4200": {
             "label": "Angular Dev Server",
