@@ -1,6 +1,5 @@
 {
     "name": "Angular Template",
-    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:18",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -9,7 +8,8 @@
             ]
         }
     },
-    "postCreateCommand": "apt-get update && apt-get install mariadb-server -y && service mariadb start && npm install -g @angular/cli",
+    "updateContentCommand":"sudo apt update",
+    "postCreateCommand": "sudo apt install mariadb-server -y",
     "portsAttributes": {
         "4200": {
             "label": "Angular Dev Server",
